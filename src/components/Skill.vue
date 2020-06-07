@@ -4,7 +4,7 @@
 
 <script>
     export default {
-        name: "Github"
+        name: "Skill"
     }
 </script>
 

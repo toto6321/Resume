@@ -4,7 +4,7 @@
 
 <script>
     export default {
-        name: "ProgrammingTable"
+        name: "Course"
     }
 </script>
 

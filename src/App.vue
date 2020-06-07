@@ -1,60 +1,74 @@
 <template>
-  <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-content>
-      <HelloWorld/>
-    </v-content>
-  </v-app>
+    <v-app>
+        <v-content>
+            <v-row>
+                <v-col id="left" class="panel-1" cols="12" xs="12" sm="8">
+                    <v-container class="d-flex flex-column">
+                        <Introduction></Introduction>
+                        <Skill></Skill>
+                        <Course></Course>
+                        <Work></Work>
+                        <Education></Education>
+                        <Repository></Repository>
+                    </v-container>
+                </v-col>
+                <v-col id="right" class="panel-1" cols="12" xs="12" sm="4">
+                    <PersonInformation></PersonInformation>
+                </v-col>
+            </v-row>
+        </v-content>
+    </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+    import PersonInformation from "./components/PersonInformation";
+    import Introduction from "./components/Introduction";
+    import Skill from "./components/Skill";
+    import Course from "./components/Course";
+    import Work from "./components/Work";
+    import Education from "./components/Education";
+    import Repository from "./components/Repository";
 
-export default {
-  name: 'App',
 
-  components: {
-    HelloWorld,
-  },
+    export default {
+        name: 'App',
 
-  data: () => ({
-    //
-  }),
-};
+        components: {
+            Repository,
+            PersonInformation,
+            Introduction,
+            Skill,
+            Course,
+            Work,
+            Education,
+        },
+
+        data: () => ({
+            //
+        }),
+    };
 </script>
+
+<style lang="css">
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        max-width: 1100px;
+    }
+
+    .panel-1 {
+        height: 400px;
+        border: solid 1px cyan;
+    }
+
+    #left {
+        border-color: red;
+        background-color: chocolate;
+    }
+
+    #right {
+        background-color: cadetblue;
+    }
+</style>
