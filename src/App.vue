@@ -62,6 +62,10 @@
         box-sizing: border-box;
     }
 
+    a {
+        color: blue !important;
+    }
+
     body {
         max-width: 1100px;
     }
