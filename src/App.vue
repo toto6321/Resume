@@ -5,13 +5,13 @@
                 <v-col id="left" class="panel-1" cols="12" xs="12" sm="8">
                     <Introduction :data="data.introduction"></Introduction>
                     <Knowledge :data="data.knowledge"></Knowledge>
-                    <Course></Course>
-                    <Work></Work>
-                    <Education></Education>
-                    <Repository></Repository>
+                    <Course :data="data.course"></Course>
+                    <Work :data="data.work"></Work>
+                    <Education :data="data.education"></Education>
+                    <Repository :data="data.repository"></Repository>
                 </v-col>
                 <v-col id="right" class="panel-1" cols="12" xs="12" sm="4">
-                    <Profile :profile="data.profile"></Profile>
+                    <Profile :data="data.profile"></Profile>
                     <Skill :data="data.skill"></Skill>
                 </v-col>
             </v-row>

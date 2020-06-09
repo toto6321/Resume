@@ -1,10 +1,10 @@
 <template>
     <v-container>
         <v-container>
-            <p id="owner_name" class="text-center">{{profile.name}}</p>
+            <p id="owner_name" class="text-center">{{data.name}}</p>
         </v-container>
         <v-list color="transparent" dense>
-            <v-list-item v-for="(item, i) in profile.items" :key="i" class="font-italic">
+            <v-list-item v-for="(item, i) in data.items" :key="i" class="font-italic">
                 <v-list-item-icon class="mr-3">
                     <v-icon v-text="item.icon"/>
                 </v-list-item-icon>
@@ -26,7 +26,7 @@
     export default {
         name: "Profile",
         props: {
-            profile: {
+            data: {
                 type: Object,
                 default: function () {
                     return {
