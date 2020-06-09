@@ -1,10 +1,12 @@
 <template>
-    <div></div>
+    <v-container>
+        Knowledge
+    </v-container>
 </template>
 
 <script>
     export default {
-        name: "PersonInformation"
+        name: "Knowledge"
     }
 </script>
 

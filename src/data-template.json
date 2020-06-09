@@ -1,5 +1,5 @@
 {
-  "personal-information": {
+  "profile": {
     "name": "Apple Bee",
     "portfolio": "https://google.com",
     "degree": "Computer Science",
@@ -13,7 +13,7 @@
     "linkedin": "https://linkedin.com",
     "github": "https://gihub.com/helloworld"
   },
-  "technical_skills": {
+  "skills": {
     "programming": [
       {
         "language": "Java",

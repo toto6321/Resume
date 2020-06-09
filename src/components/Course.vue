@@ -1,5 +1,7 @@
 <template>
-    <div></div>
+    <div>
+        Course
+    </div>
 </template>
 
 <script>

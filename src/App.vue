@@ -3,17 +3,16 @@
         <v-content>
             <v-row>
                 <v-col id="left" class="panel-1" cols="12" xs="12" sm="8">
-                    <v-container class="d-flex flex-column">
-                        <Introduction></Introduction>
-                        <Skill></Skill>
-                        <Course></Course>
-                        <Work></Work>
-                        <Education></Education>
-                        <Repository></Repository>
-                    </v-container>
+                    <Introduction :data="data.introduction"></Introduction>
+                    <Knowledge :data="data.knowledge"></Knowledge>
+                    <Course></Course>
+                    <Work></Work>
+                    <Education></Education>
+                    <Repository></Repository>
                 </v-col>
                 <v-col id="right" class="panel-1" cols="12" xs="12" sm="4">
-                    <PersonInformation></PersonInformation>
+                    <Profile :profile="data.profile"></Profile>
+                    <Skill :data="data.skill"></Skill>
                 </v-col>
             </v-row>
         </v-content>
@@ -21,21 +20,26 @@
 </template>
 
 <script>
-    import PersonInformation from "./components/PersonInformation";
-    import Introduction from "./components/Introduction";
+    import Profile from "./components/Profile";
     import Skill from "./components/Skill";
+    import Introduction from "./components/Introduction";
+
     import Course from "./components/Course";
     import Work from "./components/Work";
     import Education from "./components/Education";
     import Repository from "./components/Repository";
+
+    import data from './data'
+    import Knowledge from "./components/Knowledge";
 
 
     export default {
         name: 'App',
 
         components: {
+            Knowledge,
             Repository,
-            PersonInformation,
+            Profile,
             Introduction,
             Skill,
             Course,
@@ -43,9 +47,13 @@
             Education,
         },
 
-        data: () => ({
-            //
-        }),
+        data() {
+            return {
+                data: data
+            }
+        },
+
+        methods: {}
     };
 </script>
 
@@ -58,17 +66,11 @@
         max-width: 1100px;
     }
 
-    .panel-1 {
-        height: 400px;
-        border: solid 1px cyan;
-    }
-
     #left {
         border-color: red;
-        background-color: chocolate;
     }
 
     #right {
-        background-color: cadetblue;
+        background-color: #229999;
     }
 </style>

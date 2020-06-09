@@ -1,5 +1,7 @@
 <template>
-    <div></div>
+    <div>
+        Repository
+    </div>
 </template>
 
 <script>

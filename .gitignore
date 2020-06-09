@@ -24,4 +24,4 @@ yarn-error.log*
 public/assets/*
 
 # data
-data.json
+data.js
