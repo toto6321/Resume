@@ -11,8 +11,10 @@
                     <Repository :data="data.repository"></Repository>
                 </v-col>
                 <v-col id="right" class="panel-1" cols="12" xs="12" sm="4">
-                    <Profile :data="data.profile"></Profile>
-                    <Skill :data="data.skill"></Skill>
+                    <v-container class="right-container">
+                        <Profile :data="data.profile"></Profile>
+                        <Skill :data="data.skill"></Skill>
+                    </v-container>
                 </v-col>
             </v-row>
         </v-content>
@@ -68,6 +70,7 @@
 
     body {
         max-width: 1100px;
+        margin: auto;
     }
 
     #left {
@@ -76,5 +79,11 @@
 
     #right {
         background-color: #229999;
+        margin: auto;
+    }
+
+    .right-container {
+        min-width: 290px;
+        max-width: 400px;
     }
 </style>
