@@ -6,7 +6,7 @@
                     <Introduction :data="data.introduction"></Introduction>
                     <Knowledge :data="data.knowledge" :title="Object.keys(data)[3]"></Knowledge>
                     <Course :data="data.course" :title="Object.keys(data)[4]"></Course>
-                    <Work :data="data.work"></Work>
+                    <Work :data="data.work" :title="Object.keys(data)[5]"></Work>
                     <Education :data="data.education"></Education>
                     <Repository :data="data.repository"></Repository>
                 </v-col>
