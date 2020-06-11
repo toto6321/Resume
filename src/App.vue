@@ -4,7 +4,7 @@
             <v-row>
                 <v-col id="left" class="panel-1" cols="12" xs="12" sm="8">
                     <Introduction :data="data.introduction"></Introduction>
-                    <Knowledge :data="data.knowledge"></Knowledge>
+                    <Knowledge :data="data.knowledge" :title="Object.keys(data)[3]"></Knowledge>
                     <Course :data="data.course"></Course>
                     <Work :data="data.work"></Work>
                     <Education :data="data.education"></Education>
