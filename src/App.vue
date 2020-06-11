@@ -8,7 +8,7 @@
                     <Course :data="data.course" :title="Object.keys(data)[4]"></Course>
                     <Work :data="data.work" :title="Object.keys(data)[5]"></Work>
                     <Education :data="data.education" :title="Object.keys(data)[6]"></Education>
-                    <Repository :data="data.repository"></Repository>
+                    <Repository :data="data.repository" :title="Object.keys(data)[7]"></Repository>
                 </v-col>
                 <v-col id="right" class="panel-1" cols="12" xs="12" sm="4">
                     <v-container class="right-container">
