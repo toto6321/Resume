@@ -22,17 +22,17 @@
 </template>
 
 <script>
-    import Profile from "./components/Profile";
-    import Skill from "./components/Skill";
-    import Introduction from "./components/Introduction";
+    import Profile from "./components/Profile"
+    import Skill from "./components/Skill"
 
-    import Course from "./components/Course";
-    import Work from "./components/Work";
-    import Education from "./components/Education";
-    import Repository from "./components/Repository";
+    import Introduction from "./components/Introduction"
+    import Knowledge from "./components/Knowledge"
+    import Course from "./components/Course"
+    import Work from "./components/Work"
+    import Education from "./components/Education"
+    import Repository from "./components/Repository"
 
-    import data from './data'
-    import Knowledge from "./components/Knowledge";
+    import data from '../data'
 
 
     export default {
