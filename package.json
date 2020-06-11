@@ -12,7 +12,7 @@
     "ajv": "^6.12.2",
     "roboto-fontface": "*",
     "vue": "^2.6.11",
-    "vuetify": "^2.2.33"
+    "vuetify": "^2.2.34"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.1",
@@ -22,6 +22,9 @@
     "cz-conventional-changelog": "^3.2.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.2.3",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.8",
+    "sass-loader": "^8.0.2",
     "vue-cli-plugin-vuetify": "~2.0.5",
     "vue-template-compiler": "^2.6.11"
   },
