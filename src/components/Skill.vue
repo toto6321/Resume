@@ -1,8 +1,8 @@
 <template>
     <div class="skill d-flex flex-column mt-2">
-        <h2># Skill</h2>
+        <h2 class="text-capitalize"># {{title}}</h2>
         <div class="programming-wrapper wrapper">
-            <h3>## Programming</h3>
+            <h3 class="text-capitalize">## {{Object.keys(data)[0]}}</h3>
             <div class="d-flex flex-column programming-wrapper">
                 <div v-for="(category, i) in data.programming" :key="i"
                      class="programming-item"
@@ -13,7 +13,8 @@
                         </div>
                         <div class="flex-row programming-item-right">
                             <div v-for="(lang, i) in category" :key="i"
-                                 class="d-flex programming-item">
+                                 class="d-flex programming-item"
+                            >
                                 <label class="progress-label">{{lang.language}}</label>
                                 <v-progress-linear :value="lang.proficiency" class="progress"/>
                             </div>
@@ -23,7 +24,7 @@
             </div>
         </div>
         <div class="os-wrapper wrapper">
-            <h3>## OS</h3>
+            <h3 class="text-capitalize">## {{Object.keys(data)[1]}}</h3>
             <div>
                 <ul class="ml-2">
                     <li v-for="(e, i) in data.os" :key="i">
@@ -33,7 +34,7 @@
             </div>
         </div>
         <div class="software-wrapper wrapper">
-            <h3>## Software</h3>
+            <h3 class="text-capitalize">## {{Object.keys(data)[2]}}</h3>
             <div>
                 <ul class="ml-2">
                     <li v-for="(e, i) in data.software" :key="i">
@@ -49,56 +50,7 @@
 
     export default {
         name: "Skill",
-        props: {
-            data: {
-                type: Object,
-                default: function () {
-                    return {
-                        "programming":
-                            [
-                                [
-                                    {
-                                        "language": "Vue.js",
-                                        "icon": "mdi-vue",
-                                        "category": "frontend",
-                                        "proficiency": 80
-                                    },
-                                    {
-                                        "language": "React.js",
-                                        "icon": "mdi-react",
-                                        "category": "frontend",
-                                        "proficiency": 70
-                                    }
-                                ],
-                                [
-                                    {
-                                        "language": "Java",
-                                        "icon": "mdi-java",
-                                        "category": "backend",
-                                        "proficiency": 50
-                                    }
-                                ]
-                            ],
-                        "os": [
-                            [
-                                "Ubuntu",
-                                "Kali"
-                            ],
-                            [
-                                "ROS"
-                            ],
-                            [
-                                "Windows 10",
-                                "Windows 7"
-                            ],
-                            [
-                                "Mac OS"
-                            ]
-                        ],
-                    }
-                }
-            }
-        },
+        props: ['data', 'title'],
         data: function () {
             return {}
         },

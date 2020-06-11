@@ -25,7 +25,8 @@
 
 <script>
     export default {
-        name: "Education", props: ['data', 'title'],
+        name: "Education",
+        props: ['data', 'title'],
         methods: {
             parse_date_string: (d) => {
                 const [year, month, day] = d.split('-')

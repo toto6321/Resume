@@ -12,8 +12,8 @@
                 </v-col>
                 <v-col id="right" class="panel-1" cols="12" xs="12" sm="4">
                     <v-container class="right-container">
-                        <Profile :data="data.profile"></Profile>
-                        <Skill :data="data.skill"></Skill>
+                        <Profile :data="data.profile" :title="Object.keys(data)[0]"></Profile>
+                        <Skill :data="data.skill" :title="Object.keys(data)[1]"></Skill>
                     </v-container>
                 </v-col>
             </v-row>
