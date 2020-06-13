@@ -6,11 +6,13 @@
                 <v-card v-for="(e, i) in data" :key="i"
                         class="education d-flex">
                     <div class="school-logo d-flex justify-center align-center">
-                        <img
-                            width="72px"
-                            height="72px"
-                            :src="e.school.icon"
-                        />
+                        <a :href="e.school.link">
+                            <img
+                                width="72px"
+                                height="72px"
+                                :src="e.school.icon"
+                            />
+                        </a>
                     </div>
                     <div class="description">
                         <v-card-title>{{e.level}}</v-card-title>
