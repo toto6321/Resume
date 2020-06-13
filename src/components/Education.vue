@@ -2,7 +2,7 @@
     <v-card>
         <v-card-title class="text-uppercase">{{title}}</v-card-title>
         <v-card-text>
-            <v-container class="d-flex flex-column flex-sm-row">
+            <div class="d-flex flex-column flex-sm-row">
                 <v-card v-for="(e, i) in data" :key="i"
                         class="education d-flex">
                     <div class="school-logo d-flex justify-center align-center">
@@ -21,7 +21,7 @@
                     </div>
 
                 </v-card>
-            </v-container>
+            </div>
         </v-card-text>
     </v-card>
 </template>

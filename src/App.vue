@@ -11,10 +11,10 @@
                     <Repository :data="data.repository" :title="Object.keys(data)[7]"></Repository>
                 </div>
                 <div id="right" class="panel-1 d-flex flex-column order-1 order-sm-2">
-                    <v-container class="right-container">
+                    <div class="right-container">
                         <Profile :data="data.profile" :title="Object.keys(data)[0]"></Profile>
                         <Skill :data="data.skill" :title="Object.keys(data)[1]"></Skill>
-                    </v-container>
+                    </div>
                 </div>
             </div>
         </v-content>
@@ -68,11 +68,16 @@
         color: blue !important;
     }
 
+    .v-card__subtitle, .v-card__text, .v-card__title {
+        padding: 8px !important;
+        color: black !important;
+    }
+
     body {
-        max-width: 1200px;
+        max-width: 1100px;
         max-height: 1450px;
         margin: auto;
-        padding-top: 2%;
+        padding: 1%;
     }
 
     .v-row {
@@ -88,12 +93,13 @@
     }
 
     #left > * {
-        margin-bottom: 12px;
+        /*margin-bottom: 12px;*/
     }
 
     #right {
         flex: 1 1 30%;
         background-color: #229999;
+        margin-bottom: 12px;
         /*margin: auto;*/
         /*max-width: 30%*/
     }
@@ -101,5 +107,13 @@
     .right-container {
         min-width: 290px;
         /*max-width: 400px;*/
+    }
+
+    .panel-1 > .v-card {
+        box-shadow: none;
+    }
+
+    .panel-1 > .v-card > .v-card__text {
+        padding: 0 8px !important;
     }
 </style>

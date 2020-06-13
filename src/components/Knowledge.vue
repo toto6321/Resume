@@ -4,7 +4,7 @@
         <v-card-text>
             <ul>
                 <li v-for="(e, i) in data" :key="i">
-                    <p>{{e.join(', ')}}</p>
+                    <div>{{e.join(', ')}}</div>
                 </li>
             </ul>
         </v-card-text>

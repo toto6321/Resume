@@ -91,6 +91,7 @@
                 .programming-item-right
                     flex: 1 1 75%
                     max-width: 75%
+                    padding-right: 16px
 
                     .progress-label
                         flex: 0 0 40%
