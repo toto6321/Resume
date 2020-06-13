@@ -11,6 +11,7 @@
                                 width="72px"
                                 height="72px"
                                 :src="e.school.icon"
+                                :alt="e.school.name"
                             />
                         </a>
                     </div>
@@ -46,6 +47,7 @@
 <style scoped lang="sass">
     .education
         flex: 1 1 50%
+        margin: 0 4px
 
         .school-logo
             flex: 0 0 25%
@@ -55,7 +57,7 @@
             overflow: hidden
 
         .description
-            flex: 1 1 75%
+            flex: 1 1 50%
 
         ul
             li

@@ -52,8 +52,11 @@
         flex-wrap: wrap
 
         .repository
-            flex: 1 1 50%
+            flex: 1 1 45%
+            margin: 0 4px
             /*min-width: 300px*/
+
+
 
 
 

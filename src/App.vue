@@ -10,7 +10,7 @@
                     <Education :data="data.education" :title="Object.keys(data)[6]"></Education>
                     <Repository :data="data.repository" :title="Object.keys(data)[7]"></Repository>
                 </v-col>
-                <v-col id="right" class="panel-1" cols="12" xs="12" sm="4">
+                <v-col id="right" class="panel-1 order-xs-2" cols="12" xs="12" sm="4">
                     <v-container class="right-container">
                         <Profile :data="data.profile" :title="Object.keys(data)[0]"></Profile>
                         <Skill :data="data.skill" :title="Object.keys(data)[1]"></Skill>
@@ -75,6 +75,10 @@
         padding-top: 2%;
     }
 
+    .v-row {
+        width: 100%;
+    }
+
     #left {
         border-color: red;
     }
@@ -90,6 +94,6 @@
 
     .right-container {
         min-width: 290px;
-        max-width: 400px;
+        /*max-width: 400px;*/
     }
 </style>
