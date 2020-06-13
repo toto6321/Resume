@@ -15,7 +15,7 @@
                             <div v-for="(lang, i) in category" :key="i"
                                  class="d-flex programming-item"
                             >
-                                <label class="progress-label">{{lang.language}}</label>
+                                <div class="progress-label">{{lang.language}}</div>
                                 <v-progress-linear :value="lang.proficiency" class="progress"/>
                             </div>
                         </div>
@@ -78,20 +78,24 @@
         .programming-wrapper
 
             .programming-item
+                align-items: center
                 margin: 4px 0
 
                 .programming-item-left
                     flex: 0 0 25%
                     max-width: 33%
+                    min-width: 70px
+                    margin-rigth: 8px
 
 
                 .programming-item-right
-                    flex: 0 0 75%
+                    flex: 1 1 75%
                     max-width: 75%
 
                     .progress-label
                         flex: 0 0 40%
                         max-width: 50%
+                        min-width: 80px
 
 
                     .progress
