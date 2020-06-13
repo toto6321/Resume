@@ -79,6 +79,10 @@
         border-color: red;
     }
 
+    #left > * {
+        margin-bottom: 12px;
+    }
+
     #right {
         background-color: #229999;
         margin: auto;
