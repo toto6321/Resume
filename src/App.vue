@@ -74,8 +74,8 @@
     }
 
     body {
-        max-width: 1100px;
-        max-height: 1450px;
+        max-width: 1000px;
+        max-height: 1400px;
         margin: auto;
         padding: 1%;
     }

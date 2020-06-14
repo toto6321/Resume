@@ -3,8 +3,8 @@
         <v-card-title class="text-uppercase">{{title}}</v-card-title>
         <v-card-text>
             <div class="repository_wrapper d-flex flex-column flex-sm-row">
-                <v-card v-for="(e, i) in data" :key="i"
-                        class="repository"
+                <div v-for="(e, i) in data" :key="i"
+                     class="repository"
                 >
                     <v-card-title>{{e.name}}</v-card-title>
                     <v-card-subtitle>
@@ -19,7 +19,7 @@
                     <v-card-text>
                         {{e.description }}
                     </v-card-text>
-                </v-card>
+                </div>
             </div>
         </v-card-text>
     </v-card>

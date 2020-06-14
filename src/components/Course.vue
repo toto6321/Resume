@@ -2,11 +2,10 @@
     <v-card>
         <v-card-title class="text-uppercase">{{title}}</v-card-title>
         <v-card-text>
-            <div v-for="(e, i) in data" :key="i">
-                <v-row class="px-2">
-                    <v-col cols="3" class="py-1">{{e.name}}</v-col>
-                    <v-col cols="9" class="py-1"><a :href="e.link">{{e.project.name}}</a></v-col>
-                </v-row>
+            <div v-for="(e, i) in data" :key="i"
+                 class="course d-flex">
+                <div>{{e.name}}</div>
+                <div><a :href="e.link">{{e.project.name}}</a></div>
             </div>
         </v-card-text>
     </v-card>
@@ -19,6 +18,11 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang="sass">
+    .course
+        div:nth-child(1)
+            flex: 1 1 20%
 
+        div:nth-child(2)
+            flex: 1 1 80%
 </style>

@@ -3,10 +3,10 @@
         <v-card-title class="text-uppercase">{{title}}</v-card-title>
         <v-card-text>
             <div class="d-flex flex-column flex-sm-row">
-                <v-card v-for="(e, i) in data" :key="i"
-                        class="education d-flex">
+                <div v-for="(e, i) in data" :key="i"
+                     class="education d-flex">
                     <div class="school-logo d-flex justify-center align-center">
-                        <a :href="e.school.link">
+                        <a :href="e.school.link" class="d-flex">
                             <img
                                 width="72px"
                                 height="72px"
@@ -20,7 +20,7 @@
                         <v-card-subtitle class="ml-2">{{e.degree}}</v-card-subtitle>
                     </div>
 
-                </v-card>
+                </div>
             </div>
         </v-card-text>
     </v-card>

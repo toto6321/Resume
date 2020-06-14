@@ -26,9 +26,9 @@
         <div class="os-wrapper wrapper">
             <h3 class="text-capitalize">## {{Object.keys(data)[1]}}</h3>
             <div>
-                <ul class="ml-2">
+                <ul>
                     <li v-for="(e, i) in data.os" :key="i">
-                        <p>{{stringify(e)}}</p>
+                        {{stringify(e)}}
                     </li>
                 </ul>
             </div>
@@ -36,9 +36,9 @@
         <div class="software-wrapper wrapper">
             <h3 class="text-capitalize">## {{Object.keys(data)[2]}}</h3>
             <div>
-                <ul class="ml-2">
+                <ul>
                     <li v-for="(e, i) in data.software" :key="i">
-                        <p>{{stringify(e)}}</p>
+                        {{stringify(e)}}
                     </li>
                 </ul>
             </div>
@@ -94,13 +94,13 @@
                     padding-right: 16px
 
                     .progress-label
-                        flex: 0 0 40%
+                        flex: 0 0 50%
                         max-width: 50%
                         min-width: 80px
 
 
                     .progress
-                        flex: 0 0 60%
+                        flex: 0 0 50%
                         min-width: 50%
                         color: blue
 
@@ -110,11 +110,7 @@
 
 
         li
-            margin-bottom: 4px
-
-
-        p
-            margin-bottom: 4px
+            margin-bottom: 8px
 
 
 </style>
