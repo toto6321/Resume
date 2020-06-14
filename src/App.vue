@@ -11,10 +11,8 @@
                     <Repository :data="data.repository" :title="Object.keys(data)[7]"></Repository>
                 </div>
                 <div id="right" class="panel-1 d-flex flex-column order-1 order-sm-2">
-                    <div class="right-container">
-                        <Profile :data="data.profile" :title="Object.keys(data)[0]"></Profile>
-                        <Skill :data="data.skill" :title="Object.keys(data)[1]"></Skill>
-                    </div>
+                    <Profile :data="data.profile" :title="Object.keys(data)[0]"></Profile>
+                    <Skill :data="data.skill" :title="Object.keys(data)[1]"></Skill>
                 </div>
             </div>
         </v-content>
