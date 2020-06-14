@@ -17,7 +17,7 @@
                     </div>
                     <div class="description">
                         <div class="ml-2"><h3>{{e.school.name}}</h3></div>
-                        <div class="ml-2">{{e.degree}}</div>
+                        <div class="ml-2"><h4>{{e.degree}}</h4></div>
                     </div>
 
                 </div>

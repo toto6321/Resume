@@ -68,36 +68,30 @@
         color: blue !important;
     }
 
+    .v-card {
+        box-shadow: none !important;
+    }
+
     .v-card__subtitle, .v-card__text, .v-card__title {
         padding: 0 8px !important;
         color: black !important;
     }
 
     .v-card__title {
-        padding: 0 !important;
+        padding: 4px !important;
     }
 
-    .v-card {
-        margin-bottom: 4px;
-    }
 
     body {
         max-width: 1000px;
         max-height: 1200px;
         margin: auto;
-        padding: 1%;
-    }
-
-    .v-row {
-        width: 100%;
-        margin: 0;
-        flex-wrap: nowrap;
+        /*padding: 1%;*/
     }
 
     #left {
         flex: 3 3 75%;
         margin-right: 12px;
-        /*border-color: red;*/
     }
 
     #right {
@@ -105,10 +99,6 @@
         background-color: #229999;
         margin-top: 4px;
         /*max-width: 30%*/
-    }
-
-    .panel-1 > .v-card {
-        box-shadow: none;
     }
 
 </style>

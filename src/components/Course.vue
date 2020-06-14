@@ -21,8 +21,8 @@
 <style scoped lang="sass">
     .course
         div:nth-child(1)
-            flex: 1 1 20%
+            flex: 1 1 25%
 
         div:nth-child(2)
-            flex: 1 1 80%
+            flex: 1 1 75%
 </style>
