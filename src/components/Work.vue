@@ -8,8 +8,8 @@
                     <div class="year text-center">{{parse_date_string(e.start_time).year}}</div>
                     <div class="month text-center">{{parse_date_string(e.start_time).month}}</div>
                     <div class="detail d-flex justify-space-between">
-                        <div class="">{{e.position}}</div>
-                        <div class="">{{e.employer.city}}</div>
+                        <div><h3>{{e.position}}</h3></div>
+                        <div>{{e.employer.city}}</div>
                     </div>
                 </div>
                 <div class="d-flex">

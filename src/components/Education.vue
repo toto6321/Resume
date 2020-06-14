@@ -1,5 +1,5 @@
 <template>
-    <v-card>
+    <v-card class="mb-1">
         <v-card-title class="text-uppercase">{{title}}</v-card-title>
         <v-card-text>
             <div class="d-flex flex-column flex-sm-row">
@@ -16,8 +16,8 @@
                         </a>
                     </div>
                     <div class="description">
-                        <v-card-title>{{e.level}}</v-card-title>
-                        <v-card-subtitle class="ml-2">{{e.degree}}</v-card-subtitle>
+                        <div class="ml-2"><h3>{{e.school.name}}</h3></div>
+                        <div class="ml-2">{{e.degree}}</div>
                     </div>
 
                 </div>
