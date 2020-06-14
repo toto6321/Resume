@@ -5,15 +5,15 @@
             <div v-for="(e, i) in data" :key="i"
                  class="work flex-column">
                 <div class="d-flex">
-                    <div class="year text-center">{{parse_date_string(e.start_time).year}}</div>
-                    <div class="month text-center">{{parse_date_string(e.start_time).month}}</div>
+                    <div class="year text-center">{{parse_date_string(e.end_time).year}}</div>
+                    <div class="month text-center">{{parse_date_string(e.end_time).month}}</div>
                     <div class="detail d-flex justify-space-between">
                         <div><h3>{{e.position}}</h3></div>
                         <div>{{e.employer.city}}</div>
                     </div>
                 </div>
                 <div class="d-flex">
-                    <div class="year text-center">{{parse_date_string(e.end_time).year}}</div>
+                    <div class="year text-center">{{parse_date_string(e.start_time).year}}</div>
                     <div class="month text-center">{{parse_date_string(e.start_time).month}}</div>
                     <div class="detail d-flex justify-start">
                         <a :href="e.employer.link">{{e.employer.name}}</a>
