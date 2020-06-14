@@ -6,19 +6,19 @@
                 <div v-for="(e, i) in data" :key="i"
                      class="repository"
                 >
-                    <v-card-title>{{e.name}}</v-card-title>
-                    <v-card-subtitle>
+                    <div class="mb-1"><h3>{{e.name}}</h3></div>
+                    <div class="mb-1">
                         <a v-for="(e2, i2) in e.technical_stack" :key="i2"
                            :href="e2.link"
                         >
                             <v-avatar size="24">
-                                <v-img :src="e2.logo" width="24" height="24"></v-img>
+                                <v-img width="24" height="24" :src="e2.logo" :alt="e2.name"></v-img>
                             </v-avatar>
                         </a>
-                    </v-card-subtitle>
-                    <v-card-text>
+                    </div>
+                    <div>
                         {{e.description }}
-                    </v-card-text>
+                    </div>
                 </div>
             </div>
         </v-card-text>
@@ -55,10 +55,6 @@
             flex: 1 1 45%
             margin: 0 4px
             /*min-width: 300px*/
-
-
-
-
 
             .school-logo
                 flex: 0 0 25%
