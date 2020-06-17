@@ -30,8 +30,13 @@
     import Education from "./components/Education"
     import Repository from "./components/Repository"
 
-    import data from '../data'
-
+    const template = require('../data.template.js')
+    let data
+    try {
+        data = require('../data.js')
+    } catch (e) {
+        alert('data.js is not found!')
+    }
 
     export default {
         name: 'App',
@@ -49,7 +54,7 @@
 
         data() {
             return {
-                data: data
+                data: data || template
             }
         },
 
