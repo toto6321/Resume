@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Education(props) {
+function Course(props) {
     return (
         <div>
-            Education
+            Course
         </div>
     )
 }
 
-export default Education
+export default Course
