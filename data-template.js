@@ -233,7 +233,7 @@ export default {
                         "logo": "https://element.eleme.cn/favicon.ico"
                     }
                 ],
-                "description": "This resume actually is a web page, intended to be compact for print. You can also visit https://secs.oakland.edu/~tianhuantu to see more details."
+                "description": "This resume actually is a web page, intended to be compact for print. You can also visit https://secs.oakland.edu/~applebee to see more details."
             },
         ]
 }
