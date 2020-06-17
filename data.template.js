@@ -1,35 +1,80 @@
-export default {
+module.exports = {
     "profile": {
-        "name": "Apple Bee",
-        "portfolio": "https://google.com",
-        "degree": "Computer Science",
-        "language": [
-            "Chinese",
-            "English"
-        ],
-        "phone": "1234567890",
-        "email": "applebee@abcd.edu",
-        "address": "1234 abc, xyz",
-        "linkedin": "https://linkedin.com",
-        "github": "https://gihub.com/helloworld"
-    },
-    "skills": {
-        "programming": [
+        "name":
+            "Apple Bee",
+        "items": [
             {
-                "language": "Java",
-                "category": "backend",
-                "proficiency": 5
+                "name": "degree",
+                "icon": "mdi-certificate",
+                "value": "Master of Science in CS"
             },
             {
-                "language": "Vue.js",
-                "category": "frontend",
-                "proficiency": 8
+                "name": "language",
+                "icon": "mdi-translate",
+                "value": ["English"]
             },
             {
-                "language": "React.js",
-                "category": "frontend",
-                "proficiency": 7
+                "name": "phone",
+                "icon": "mdi-phone",
+                "value": "+1 123 456 7890"
+            },
+            {
+                "name": "address",
+                "icon": "mdi-home",
+                "value": "AAA, BBB, US"
+            },
+            {
+                "name": "email",
+                "icon": "mdi-email-outline",
+                "value": "applebee@gmail.com"
+            },
+            {
+                "name": "github",
+                "icon": "mdi-github-circle",
+                "value": "https://gihub.com/applebee"
+            },
+            {
+                "name": "linkedin",
+                "icon": "mdi-linkedin",
+                "value": "https://www.linkedin.com/"
+            },
+            {
+                "name": "link",
+                "icon": "mdi-link",
+                "value": "https://wix.com"
             }
+        ]
+    },
+    "skill": {
+        "programming": [
+            [
+                {
+                    "language": "Vue.js",
+                    "icon": "mdi-language-vue",
+                    "category": "frontend",
+                    "proficiency": 80
+                },
+                {
+                    "language": "React.js",
+                    "icon": "mdi-language-react",
+                    "category": "frontend",
+                    "proficiency": 70
+                }
+            ],
+            [
+                {
+                    "language": "Nodejs",
+                    "icon": "mdi-language-nodejs",
+                    "category": "backend",
+                    "proficiency": 75
+                },
+                {
+                    "language": "Java",
+                    "icon": "mdi-language-java",
+                    "category": "backend",
+                    "proficiency": 50
+                }
+            ],
         ],
         "os": [
             [
@@ -136,10 +181,8 @@ export default {
                 "city": "Rochester, Mi, US",
                 "link": "https://www.oakland.edu"
             },
-            "period": {
-                "start_time": "2030-09",
-                "end_time": "2032-04"
-            },
+            "start_time": "2030-09",
+            "end_time": "2032-04",
             "position": "Teaching Assistant",
             "achievement": [
                 "Assisted lectures, helped design lab activities, supervised technical labs, and served as a mentor in courses: Object-Oriented Programming"
@@ -151,10 +194,8 @@ export default {
                 "city": "Detroit, Michigan, US",
                 "link": "https://amazon.com"
             },
-            "period": {
-                "start_time": "2020-01",
-                "end_time": "2029-12"
-            },
+            "start_time": "2020-01",
+            "end_time": "2029-12",
             "position": "Web developer",
             "achievement": [
                 "Fixed bugs and developed new feature"
