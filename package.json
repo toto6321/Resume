@@ -14,6 +14,7 @@
     "sass-loader": "^8.0.2"
   },
   "scripts": {
+    "prepare": "node pre-script.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

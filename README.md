@@ -1,8 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Resume 
+
+It is a resume template implemented in React.js. 
+
+It is a pure front-end website(webpage) not requiring any data from remote server. 
+
+Personal data should be prepared before you actually run it, otherwise, template data will populate. (see Project setup)
+
+Note: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+## Project setup
+1. Install all dependencies
+    
+    ```
+    yarn install
+    ```
+2. Prepare data.
+    
+    ```
+    yarn prepare
+    ```
+
+3. Either go to development mode for preview or directly go to build mode for deployment
+by running
+    
+    ```
+    # development mode
+    yarn start 
+    
+    # production mode (to be deployed)
+    yarn build 
+    ```    
+
+
+
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn prepare`
+
+Prepare template data. <br/> 
+You should follow the JSON format of th file `src/data.js` to fill in your data.
+
 
 ### `yarn start`
 

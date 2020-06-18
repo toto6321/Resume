@@ -12,7 +12,7 @@ import Repository from './component/Repository/Repository'
 
 
 function App() {
-    const [data, setData] = useState(() => require('./data.template.js'))
+    const [data, setData] = useState(() => require('./data.js'))
 
     return (
         <div className="app">
