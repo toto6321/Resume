@@ -17,16 +17,16 @@ function App() {
     return (
         <div className="app">
             <div className="left">
-                <Introduction/>
-                <Knowledge/>
-                <Course/>
-                <Work/>
-                <Education/>
-                <Repository/>
+                <Introduction data={data.introduction}/>
+                <Knowledge data={data.knowledge} title={Object.keys(data)[3]}/>
+                <Course data={data.course} title={Object.keys(data)[4]}/>
+                <Work data={data.work} title={Object.keys(data)[5]}/>
+                <Education data={data.education} title={Object.keys(data)[6]}/>
+                <Repository data={data.repository} title={Object.keys(data)[7]}/>
             </div>
             <div className="right">
-                <Profile/>
-                <Skill/>
+                <Profile data={data.profile} title={Object.keys(data)[0]}/>
+                <Skill data={data.skill} title={Object.keys(data)[1]}/>
             </div>
         </div>
     );

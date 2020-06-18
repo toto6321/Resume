@@ -2,9 +2,11 @@ import React from 'react'
 
 function Introduction(props) {
 
+    const prefix = "CAREER FOCUS: "
+
     return (
         <div>
-            <div>{props.career}</div>
+            <div><h2>{prefix + props.data.career}</h2></div>
             <div>
                 <ul>
                     {

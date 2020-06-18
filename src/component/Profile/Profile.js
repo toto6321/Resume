@@ -3,7 +3,7 @@ import './Profile.css'
 
 function Profile(props) {
 
-    const stringify = (item) => (item) => Array.isArray(item) ? item.join(', ') : item.toString()
+    const stringify = (item) => Array.isArray(item) ? item.join(', ') : item.toString()
 
     const list = props.data.items.map((e, i) => {
             let fragment

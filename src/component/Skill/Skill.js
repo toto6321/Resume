@@ -54,7 +54,7 @@ function OS(props) {
                 <ul>
                     {
                         props.data.map((e, i) => (
-                            <li>{stringify(e)}</li>
+                            <li key={i}>{stringify(e)}</li>
                         ))
                     }
                 </ul>
@@ -73,7 +73,7 @@ function Software(props) {
                 <ul>
                     {
                         props.data.map((e, i) => (
-                            <li>{stringify(e)}</li>
+                            <li key={i}>{stringify(e)}</li>
                         ))
                     }
                 </ul>

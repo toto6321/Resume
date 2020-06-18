@@ -4,7 +4,7 @@ function Course(props) {
 
     return (
         <div>
-            <div>{props.title}</div>
+            <div><h2>{props.title}</h2></div>
             <div>
                 {
                     props.data.map((e, i) => (
