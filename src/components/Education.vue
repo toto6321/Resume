@@ -4,7 +4,7 @@
         <v-card-text>
             <div class="d-flex flex-column flex-sm-row">
                 <div v-for="(e, i) in data" :key="i"
-                     class="education d-flex">
+                     class="education d-flex mb-2">
                     <div class="school-logo d-flex justify-center align-center">
                         <a :href="e.school.link" class="d-flex">
                             <img
