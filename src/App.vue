@@ -51,6 +51,11 @@
                 data: data
             }
         },
+
+        mounted() {
+            const title = document.getElementsByTagName("title")[0]
+            title.text = "Resume of " + this.data.profile.name
+        }
     };
 </script>
 
