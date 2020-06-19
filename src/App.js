@@ -14,6 +14,9 @@ import Repository from './component/Repository/Repository'
 function App() {
     const [data, setData] = useState(() => require('./data.js'))
 
+    const title = document.getElementsByTagName("title")[0]
+    title.text = "Resume of " + data.profile.name
+
     return (
         <div className="app">
             <div className="left">
