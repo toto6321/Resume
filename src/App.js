@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import './App.css';
+import React, {useState} from 'react'
+import './App.sass'
 
 import Profile from './component/Profile/Profile'
 import Skill from './component/Skill/Skill'

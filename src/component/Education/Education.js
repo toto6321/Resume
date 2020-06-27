@@ -3,9 +3,9 @@ import React from 'react'
 function Education(props) {
 
     return (
-        <div>
-            <div><h2>{props.title}</h2></div>
-            <div>
+        <div className="v-card">
+            <div className="v-card__title"><h2>{props.title}</h2></div>
+            <div className="v-card__text">
                 {
                     props.data.map((e, i) => (
                         <div key={i}>

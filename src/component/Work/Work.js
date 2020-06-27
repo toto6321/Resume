@@ -12,19 +12,19 @@ function Work(props) {
     }
 
     return (
-        <div>
-            <div><h2>{props.title}</h2></div>
-            <div>
+        <div className="v-card">
+            <div className="v-card__title"><h2>{props.title}</h2></div>
+            <div className="v-card__text">
                 {
                     props.data.map((e, i) => (
-                            <div key={i}>
+                        <div key={i}>
+                            <div>
+                                <div className="year">{parse_date_string(e.end_time).year}</div>
+                                <div className="month">{parse_date_string(e.end_time).month}</div>
                                 <div>
-                                    <div className="year">{parse_date_string(e.end_time).year}</div>
-                                    <div className="month">{parse_date_string(e.end_time).month}</div>
-                                    <div>
-                                        <div><h3>{e.position}</h3></div>
-                                        <div>{e.employer.city}</div>
-                                    </div>
+                                    <div><h3>{e.position}</h3></div>
+                                    <div>{e.employer.city}</div>
+                                </div>
                                 </div>
                                 <div>
                                     <div className="year">{parse_date_string(e.start_time).year}</div>

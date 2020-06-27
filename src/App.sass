@@ -1,0 +1,62 @@
+*
+    box-sizing: border-box
+
+h2
+    text-transform: uppercase
+    margin: 0
+
+ul
+    margin: 0
+
+html
+    font-size: 16px
+    line-height: 1.5
+
+    body
+        max-width: 1000px
+        max-height: 1200px
+        margin: auto
+
+
+.v-card
+
+    .v-card__title
+        padding: 4px
+
+    .v-card__text
+        padding: 0 8px
+        font-size: 0.875rem
+        font-weight: 400
+
+
+@media all and (max-width: 600px)
+    .app
+        display: flex
+        flex-direction: column
+
+    .left
+        flex: 3 3 75%
+        margin-right: 12px
+        order: 2
+
+    .right
+        flex: 1 1 30%
+        background-color: darkcyan
+        order: 1
+
+
+@media all and (min-width: 601px)
+    .app
+        display: flex
+        flex-direction: row
+
+    .left
+        flex: 3 3 75%
+        margin-right: 12px
+        order: 1
+
+    .right
+        flex: 1 1 30%
+        background-color: darkcyan
+        order: 2
+

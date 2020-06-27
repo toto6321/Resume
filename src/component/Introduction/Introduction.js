@@ -5,9 +5,9 @@ function Introduction(props) {
     const prefix = "CAREER FOCUS: "
 
     return (
-        <div>
-            <div><h2>{prefix + props.data.career}</h2></div>
-            <div>
+        <div className="v-card">
+            <div className="v-card__title"><h2>{prefix + props.data.career}</h2></div>
+            <div className="v-card__text">
                 <ul>
                     {
                         props.data.about.map((e, i) => (
