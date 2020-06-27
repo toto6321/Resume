@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react"
+import './Course.sass'
 
 function Course(props) {
 
@@ -8,10 +9,10 @@ function Course(props) {
             <div className="v-card__text">
                 {
                     props.data.map((e, i) => (
-                            <div key={i}>
-                                <div>{e.name}</div>
-                                <div><a href={e.link}>{e.project.name}</a></div>
-                            </div>
+                        <div key={i} className="course">
+                            <div>{e.name}</div>
+                            <div><a href={e.project.link}>{e.project.name}</a></div>
+                        </div>
                         )
                     )
                 }
