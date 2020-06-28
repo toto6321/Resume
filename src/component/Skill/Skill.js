@@ -1,5 +1,6 @@
 import React from 'react'
 import './Skill.sass'
+import ProgressBar from "../ProgressBar/ProgressBar";
 
 function Skill(props) {
 
@@ -31,8 +32,7 @@ function Programming(props) {
                                             <div key={i2} className="flex">
                                                 <div className="progress-label">{e2.language}</div>
                                                 <div className="progress">
-                                                    <input className="progress_bar" type="range"
-                                                           value={e2.proficiency} max="100"/>
+                                                    <ProgressBar value={e2.proficiency}/>
                                                 </div>
                                             </div>
                                         ))
