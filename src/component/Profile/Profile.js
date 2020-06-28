@@ -1,5 +1,5 @@
 import React from 'react'
-import './Profile.css'
+import './Profile.sass'
 
 function Profile(props) {
 
@@ -13,9 +13,9 @@ function Profile(props) {
                 fragment = <div>{stringify(e.value)}</div>
             }
             return (
-                <div key={i}>
-                    <div><i>{e.icon}</i></div>
-                    <div>
+                <div key={i} className="item">
+                    <div className="item_name"><i>{e.name}</i></div>
+                    <div className="item_value">
                         {fragment}
                     </div>
                 </div>
@@ -24,11 +24,11 @@ function Profile(props) {
     )
 
     return (
-        <div>
+        <div className="profile">
             <div id="owner_name">
                 <h1>{props.data.name}</h1>
             </div>
-            <div>
+            <div className="info">
                 {list}
             </div>
         </div>
