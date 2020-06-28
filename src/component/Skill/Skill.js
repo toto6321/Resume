@@ -1,9 +1,10 @@
 import React from 'react'
+import './Skill.sass'
 
 function Skill(props) {
 
     return (
-        <div>
+        <div className="skill">
             <div><h2>{'# ' + props.title}</h2></div>
             <Programming data={props.data.programming} title={Object.keys(props.data)[0]}/>
             <OS data={props.data.os} title={Object.keys(props.data)[1]}/>
@@ -16,9 +17,9 @@ function Skill(props) {
 function Programming(props) {
 
     return (
-        <div className="programming-wrapper">
+        <div className="programming-wrapper wrapper">
             <h3>{'## ' + props.title}</h3>
-            <div>
+            <div className="programming-item-wrapper">
                 {
                     props.data.map((category, i) => {
                         return (
@@ -27,8 +28,8 @@ function Programming(props) {
                                 <div className="programming-item-right">
                                     {
                                         category.map((e2, i2) => (
-                                            <div key={i2}>
-                                                <div className="progressLabel">{e2.language}</div>
+                                            <div key={i2} className="flex">
+                                                <div className="progress-label">{e2.language}</div>
                                                 <div className="progress">{e2.proficiency}</div>
                                                 {/*    //todo progress bar */}
                                             </div>
