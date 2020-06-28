@@ -18,7 +18,7 @@ function Programming(props) {
 
     return (
         <div className="programming-wrapper wrapper">
-            <h3>{'## ' + props.title}</h3>
+            <h3 className="text-capitalize">{'## ' + props.title}</h3>
             <div className="programming-item-wrapper">
                 {
                     props.data.map((category, i) => {
@@ -30,8 +30,10 @@ function Programming(props) {
                                         category.map((e2, i2) => (
                                             <div key={i2} className="flex">
                                                 <div className="progress-label">{e2.language}</div>
-                                                <div className="progress">{e2.proficiency}</div>
-                                                {/*    //todo progress bar */}
+                                                <div className="progress">
+                                                    <input className="progress_bar" type="range"
+                                                           value={e2.proficiency} max="100"/>
+                                                </div>
                                             </div>
                                         ))
                                     }
@@ -50,7 +52,7 @@ function OS(props) {
 
     return (
         <div className="os-wrapper wrapper">
-            <h3>{'## ' + props.title}</h3>
+            <h3 className="text-capitalize">{'## ' + props.title}</h3>
             <div>
                 <ul>
                     {
@@ -69,7 +71,7 @@ function Software(props) {
 
     return (
         <div className="software-wrapper wrapper">
-            <h3>{'## ' + props.title}</h3>
+            <h3 className="text-capitalize">{'## ' + props.title}</h3>
             <div>
                 <ul>
                     {
@@ -82,6 +84,5 @@ function Software(props) {
         </div>
     )
 }
-
 
 export default Skill

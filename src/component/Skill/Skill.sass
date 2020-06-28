@@ -43,6 +43,19 @@
                         min-width: 80px
 
                     .progress
+                        display: flex
                         flex: 0 0 50%
                         min-width: 50%
-                        color: blue
+                        justify-content: center
+                        align-items: center
+
+                        .progress_bar
+                            width: 100%
+                            height: 2px
+                            background: #ddd
+                            opacity: 0.9
+
+                        .progress_bar::-moz-range-thumb, .progress_bar::-webkit-slider-thumb
+                            background: #e4a
+                            width: 8px
+                            height: 6px
